@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <title>Mermaid Quick Test Page</title>
+    <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+        <style>
+            .jumbotron {
+            background-color: #f4511e; /* Orange */
+            color: #ffffff;
+            padding: 100px 25px;
+            }
+            .container-fluid {
+            }
+            .bg-grey {
+            background-color: #f6f6f6;
+            }
+            .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            }
+
+            .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+            }
+
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+            }
+
+            .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+            }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Created with XXXXXX</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#services">HOME</a></li>            
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPONENETS
+                        <span class="caret"></span></a>            
+                 <ul class="dropdown-menu">
+                    <li><a href="#one">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                 </ul>
+            </li>
+
+            <li><a href="#pricing">PRICING</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="jumbotron text-center" >
+    <h1>Process Name</h1>
+    <p>Process description - blablabla</p>
+    </div>
+    <div id="one" class="container-fluid bg-grey">
+        <h2>##TITLE##</h2>
+        <p>##SUBTITLE##</p>
+        <p>##DESCRIPTION##</p>
+        <p>Last modified: ##LASTMODIFIED##</p>
+        <h4>Input Arguments</h4>
+        <p>##ARGUMENTS##</p>
+        <h4>Output Arguments</h4>
+        <p>##ARGUMENTS##</p>
+        <h4>Input/Outbut Arguments</h4>
+        <p>##ARGUMENTS##</p>
+        <h4>Highlevel Flow</h4>
+        <div style="text-align: center;" class="mermaid">
+           flowchart
+Sequence_3-->
+Sequence_19-->
+BrowserScope_5[Resultsfo Page]
+subgraph BrowserScope_5
+direction TB
+Sequence_18-->
+ExtractData_5-->
+ForEachRow_5-->
+Sequence_17-->
+WriteLine_12-->
+OpenBrowser_4-->
+Sequence_20-->
+GetValue_4-->
+WriteLine_14
+end
+BrowserScope_5
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <h2>##TITLE##</h2>
+        <p>##SUBTITLE##</p>
+        <p>##DESCRIPTION##</p>
+        <p>Last modified: ##LASTMODIFIED##</p>
+        <h4>Input Arguments</h4>
+        <p>##ARGUMENTS##</p>
+        <h4>Output Arguments</h4>
+        <p>##ARGUMENTS##</p>
+        <h4>Input/Outbut Arguments</h4>
+        <p>##ARGUMENTS##</p>
+        <h4>Highlevel Flow</h4>
+        <div style="text-align: center;" class="mermaid">
+           flowchart
+Sequence_3-->
+Sequence_19-->
+BrowserScope_5[Resultsfo Page]
+subgraph BrowserScope_5
+direction TB
+Sequence_18-->
+ExtractData_5-->
+ForEachRow_5-->
+Sequence_17-->
+WriteLine_12-->
+OpenBrowser_4-->
+Sequence_20-->
+GetValue_4-->
+WriteLine_14
+end
+BrowserScope_5
+        </div>
+    </div>
+
+
+
+
+        
+</body>
+</html>
